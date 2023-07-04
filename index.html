@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google" value="notranslate">
+    <link rel="icon" href="static/favicon.png">
+    <title>Snail ID: A Scratch mod with a custom aspect ratio that can load an extension from a URL</title>
+  </head>
+  <body>
+  <script type="text/javascript" src="https://cdn.powerbox1000.repl.co/DevBlocks/imagestore.js"></script>
+  <script type="text/javascript" src="ext/ext.js"></script>
+  <script type="text/javascript" src="lib.min.js"></script>
+  <script type="text/javascript" src="chunks/gui.js"></script>
+  <script src="ext/menuinject.js" type="text/javascript"></script>
+  <script>
+    // alert("Can you all please stop eating up my replit bandwidth idk why this is so popular");
+    var p = new URLSearchParams(location.search);
+    if(p.has('fullscreen')){
+      vm.forceFullscreen();
+    }
+  </script>
+  </body>
+</html>
